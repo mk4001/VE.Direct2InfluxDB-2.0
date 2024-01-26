@@ -17,21 +17,21 @@ Detailed documentation of the fields, their format and content is collected here
 
 https://www.victronenergy.com/upload/documents/VE.Direct-Protocol-3.33.pdf
 
-Once the record has been captured on ESP32, we need to parse the fields and collect the data we need before sending it to the MQTT broker
+Once the record has been captured on the ESP32, needs to parse the fields and collect the data, of what we need, before sending to InfluxDB.2
 
-In this new version 2.0 I used the official Victron Energy library "VeDirectFrameHandler" which is able to manage the "Chesum" field very well at the end of each record coming from a Victron device.
+It's easy to create a free account on InfluxDB in the cloud, while for the more daring, you can download the entire suite needed for on-premise installation for a Raspberry PI for free.
 
-The "ParsingData.ino" function takes on, in this new version, a less relevant role and is no longer invoked for each entire record but rather for each field every time an entire and correct record is validated at Checksum level.
+You can start directly in the Cloud from here:
 
-When your broker finally receives the data you can decide to collect it (perhaps using InfluxDB TELEGRAF):
+https://cloud2.influxdata.com/signup
 
-https://www.influxdata.com/time-series-platform/telegraf/
+Once logged into InfluxDB, you have to create a new Bucket (in short, a DB) and related Token which you then have to copy into the code attached here together with the ID of your organization. Easy.
 
-and create a wonderful Dashboard on Grafana (always in the cloud, always free)
+When your Bucket is finally full of data you can decide to create a wonderful Dashboard on Grafana (always in the cloud, always free)
 
 https://grafana.com/auth/sign-up/create-user?pg=hp&plcmt=hero-btn1&cta=create-free-account
 
-With a little imagination and above all practice, you can also create dashboards like this:
+With a little imagination and above all practice, you can even create dashboards like this:
 
 ![image1](https://github.com/mk4001/VE.Direct2MQTT-2.0/blob/5b6c22a4f9a01b6e5497d393e531245881a66e8c/Screenshot%202024-01-26%20at%2010.20.00.png)
 (Grafana Dashboard file: Victron Energy-1700659129739.json)
