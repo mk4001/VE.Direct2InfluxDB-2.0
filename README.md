@@ -9,7 +9,8 @@ It is necessary to create a simple adapter cable with the help of a JST 2.0 PH 4
 
 For the pins of the UART port in question, I only used PINs 1 (GND) and 3 (TX), then connected to Serial2 of a "DEVIT V1 ESP32-WROOM-32 Development Board" (GND and GPIO16 ports).
 
-Screenshot 2023-07-20 at 09 47 55
+<img width="1369" alt="Screenshot 2023-07-20 at 09 47 55" src="https://github.com/mk4001/VE.Direct2InfluxDB/assets/50479511/780e0403-754e-42f9-90fa-479fb00701fc">
+
 Data flows from the UART port at a rate of 1 record/sec.
 
 Detailed documentation of the fields, their format and content is collected here:
@@ -32,6 +33,7 @@ https://grafana.com/auth/sign-up/create-user?pg=hp&plcmt=hero-btn1&cta=create-fr
 
 With a little imagination and above all practice, you can also create dashboards like this:
 
-image1 (Grafana Dashboard file: Victron Energy-1700659129739.json)
+![image1](https://github.com/mk4001/VE.Direct2MQTT-2.0/blob/5b6c22a4f9a01b6e5497d393e531245881a66e8c/Screenshot%202024-01-26%20at%2010.20.00.png)
+(Grafana Dashboard file: Victron Energy-1700659129739.json)
 
 the obviously "interesting" thing is that you can consult the data of your Victron Energy devices quickly and easily from anywhere and customize them as you prefer.
