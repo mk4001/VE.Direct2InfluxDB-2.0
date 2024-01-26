@@ -33,22 +33,14 @@
 
 long rec_count = 0;
 
-const char* ssid = "WLAN 7490-2.4GHz";
-const char* password = "06431928919070006302";
+const char* ssid = "xxxxxxxxxxxxxxxxxxx"; //your SSID name
+const char* password = "yyyyyyyyyyyyyyy"; //your SSID password
 
 // InfluxDB Cloud Configuration
 const char* influxDBUrl = "https://eu-central-1-1.aws.cloud2.influxdata.com";
-const char* influxDBToken = "vlYHoJH6PrcDepvl8MCt886dJhmIrfFwvS8I8M0d5OmAgxTIZEzA0wm1EQMrkkRZ9xpQZsV1nLdEVER0ilWHog==";
-const char* influxDBOrg = "447ab0b6dc55f6f8";
+const char* influxDBToken = "ajajhgajhgajhgajhgajhgajhgajhgajhgajhgajhgajhg";
+const char* influxDBOrg = "876324876234876234876";
 const char* influxDBBucket = "Victron";
-
-/*
-// InfluxDB on Premise Configuration
-const char* influxDBUrl = "http://rpi3bp:8086";
-const char* influxDBToken = "kGVg7zzUkhQjoXBgSQ-tDXSVRl4j7XmRt16VVUsu_Imkd7lwjX2TMYycV3Pfa4FUZHR6Pmh46db2qXwwhJW-_A==";
-const char* influxDBOrg = "ae1e888a12c8e19c";
-const char* influxDBBucket = "Victron";
-*/
 
 // Time zone info
 #define TZ_INFO "UTC2"
