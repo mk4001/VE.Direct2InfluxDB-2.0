@@ -1,7 +1,7 @@
 /*
-  © MK4001 16 Jul 2023
+  © MK 15 Jan 2024
   Write Victron Energy MPPT fields to INfluxDB on Cloud
-  based on ESP32 Wroom
+  based on ESP32 Wroom using Uses VeDirectFrameHandler library
 */
 
 // Parsing MPPT serial data and InfluxDB Cloud writing
