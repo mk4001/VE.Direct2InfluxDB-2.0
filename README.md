@@ -19,6 +19,10 @@ https://www.victronenergy.com/upload/documents/VE.Direct-Protocol-3.33.pdf
 
 Once the record has been captured on the ESP32, needs to parse the fields and collect the data, of what we need, before sending to InfluxDB.2
 
+In this new version 2.0 I used the official Victron Energy library "VeDirectFrameHandler" which is able to manage the "Chesum" field very well at the end of each record coming from a Victron device.
+
+The "ParsingData.ino" function takes on, in this new version, a less relevant role and is no longer invoked for each entire record but rather for each field every time an entire and correct record is validated at Checksum level.
+
 It's easy to create a free account on InfluxDB in the cloud, while for the more daring, you can download the entire suite needed for on-premise installation for a Raspberry PI for free.
 
 You can start directly in the Cloud from here:
