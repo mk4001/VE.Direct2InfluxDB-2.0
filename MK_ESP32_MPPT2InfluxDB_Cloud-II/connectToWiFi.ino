@@ -1,3 +1,9 @@
+/*
+  © MK 15 Jan 2024
+  Write Victron Energy MPPT fields to INfluxDB on Cloud
+  based on ESP32 Wroom using Uses VeDirectFrameHandler library
+*/
+
 void connectToWiFi() {
   Serial.print("Connecting to WiFi...");
   WiFi.begin(ssid, password);
